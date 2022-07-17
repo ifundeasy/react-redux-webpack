@@ -1,0 +1,8 @@
+node_modules/**
+package-lock.json
+yarn.lock
+dist/**
+.vscode/**
+.yarn/**
+compilation-stats.json
+**/*.css

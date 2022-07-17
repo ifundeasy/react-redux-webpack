@@ -1,0 +1,123 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    "incremental": true /* Enable incremental compilation */,
+    // "composite": true,
+    // "tsBuildInfoFile": "./",
+    // "disableSourceOfProjectReferenceRedirect": true,
+    // "disableSolutionSearching": true,
+    // "disableReferencedProjectLoad": true,
+
+    /* Language and Environment */
+    "target": "es2021",
+    // "lib": [],
+    "jsx": "react",
+    "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+    // "jsxFactory": "",
+    // "jsxFragmentFactory": "",
+    // "jsxImportSource": "",
+    // "reactNamespace": "",
+    // "noLib": true,
+    // "useDefineForClassFields": true,
+
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "./",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [".src/*"],
+      "@src/*": ["./src/*"],
+      "@stateless/*": ["./src/components/stateless/*"],
+      "@stateful/*": ["./src/components/stateful/*"],
+      "@hooks/*": ["./src/components/hooks/*"],
+      "@container/*": ["./src/components/container/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@routers/*": ["./src/routers/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    // "rootDirs": [],
+    // "typeRoots": [],
+    // "types": ["react/next", "react-dom/next"],
+    // "allowUmdGlobalAccess": true,
+    "resolveJsonModule": true,
+    // "noResolve": true,
+
+    /* JavaScript Support */
+    "allowJs": true /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */,
+    // "checkJs": true,
+    // "maxNodeModuleJsDepth": 1,
+
+    /* Emit */
+    // "declaration": true,
+    // "declarationMap": true,
+    // "emitDeclarationOnly": true,
+    // "sourceMap": true,
+    // "outFile": "./",
+    // "outDir": "./",
+    // "removeComments": true,
+    "noEmit": true,
+    // "importHelpers": true,
+    // "importsNotUsedAsValues": "remove",
+    // "downlevelIteration": true,
+    // "sourceRoot": "",
+    // "mapRoot": "",
+    // "inlineSourceMap": true,
+    // "inlineSources": true,
+    // "emitBOM": true,
+    // "newLine": "crlf",
+    // "stripInternal": true,
+    // "noEmitHelpers": true,
+    // "noEmitOnError": true,
+    // "preserveConstEnums": true,
+    // "declarationDir": "./",
+    // "preserveValueImports": true,
+
+    /* Interop Constraints */
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // "preserveSymlinks": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    // "strictPropertyInitialization": true,
+    // "noImplicitThis": true,
+    // "useUnknownInCatchVariables": true,
+    // "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noUncheckedIndexedAccess": true,
+    // "noImplicitOverride": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // "allowUnusedLabels": true,
+    // "allowUnreachableCode": true,
+
+    /* Completeness */
+    // "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "typings"],
+  "exclude": ["node_modules", "dist"],
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"],
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }]
+  }
+}
