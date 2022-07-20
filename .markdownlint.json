@@ -2,5 +2,6 @@
   "default": true,
   "no-hard-tabs": false,
   "whitespace": false,
-  "line-length": false
+  "line-length": false,
+  "MD001": false
 }
