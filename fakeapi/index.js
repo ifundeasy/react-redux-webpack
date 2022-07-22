@@ -14,11 +14,10 @@ const router = new Router()
 app.use(bodyParser())
 app.use(cors())
 
-const shops = require('./shops')
-const user = require('./app')
+const routes = require('./routes')
 
-router.use('/shops', shops.routes())
-router.use('/app', user.routes())
+router.use('/', routes.base.routes())
+// router.use('/misc', routes.misc.routes())
 
 app.use(router.routes()).use(router.allowedMethods())
 

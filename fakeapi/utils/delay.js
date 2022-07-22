@@ -1,5 +1,3 @@
-const delay = (time) =>
-  new Promise((resolve) => {
-    setTimeout(() => resolve(), time)
-  })
-module.exports = delay
+const { delay } = require('bluebird')
+
+module.exports = () => delay(1000)

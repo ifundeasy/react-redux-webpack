@@ -36,7 +36,7 @@
   2. cd react-redux-webpack
   3. You can choose either of the following two ways to start the project, other cli refer to the scripts in package.json
     - npm start
-    - npm run dev:faker
+    - npm run fakeapi
 ```
 
 ## VSCode extension: alias path jump
@@ -144,7 +144,10 @@
 
 ```bash
 // mock index.js
-npm run dev:faker
+npm run fakeapi
+
+// make sure that the `JWT-RS256.key` `JWT-RS256.key.pub` and `secret` file are exists, if not, run this:
+npm run gen:jwtkey
 ```
 
 ## Deployment
@@ -414,7 +417,7 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
     ├── postcss.config.js
     ├── package.json
     ├── package-lock.json
-    ├── faker/
+    ├── fakeapi/
     │   ├── utils/
     │   ├── shops/
     │   ├── index.js

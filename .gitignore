@@ -6,3 +6,6 @@
 /.eslintcache
 compilation-stats.json
 .yarn/cache
+/fakeapi/secret
+/fakeapi/JWT-RS256.key
+/fakeapi/JWT-RS256.key.pub
